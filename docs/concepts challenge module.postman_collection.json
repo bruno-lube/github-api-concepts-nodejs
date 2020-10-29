@@ -1,0 +1,146 @@
+{
+  "info": {
+    "_postman_id": "72b17f32-708d-42c5-aaff-0ca3dd0b2a09",
+    "name": "Concepts challenge module",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/repositories",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "repositories"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"GoStack Template - NodeJs concepts\",\r\n    \"url\": \"https://github.com/rocketseat-education/gostack-template-conceitos-nodejs\",\r\n    \"techs\": [\"NodeJs\",\"Javascript\",\"Jest\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/repositories",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "repositories"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"GoStack Template - ReactJS concepts\",\r\n    \"url\":\"https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-conceitos-reactjs\",\r\n    \"techs\": [\"ReactJS\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/repositories/facc05a8-45b7-45a9-a587-35eb077ea2df",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "repositories",
+            "facc05a8-45b7-45a9-a587-35eb077ea2df"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Like repo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/repositories/3afb59b2-d067-41ac-8657-e2ac3de6e90e/like",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "repositories",
+            "3afb59b2-d067-41ac-8657-e2ac3de6e90e",
+            "like"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/repositories/598882d1-5e7b-4480-a76a-29f99947be8f",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "repositories",
+            "598882d1-5e7b-4480-a76a-29f99947be8f"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "ed96e6c8-cb5d-495f-a70b-e77217fa439b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "2ec69eb4-e379-49e2-a199-d7007f46295b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "f2886a06-5b76-4041-9056-9d48d4b97938",
+      "key": "base_url",
+      "value": "http://localhost:3333"
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
